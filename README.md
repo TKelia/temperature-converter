@@ -1,68 +1,47 @@
-# Temperature Converter App
+# Temperature Converter
 
-A beautiful and user-friendly temperature conversion application built with Flutter that allows users to convert between Fahrenheit and Celsius temperatures.
+This is my temperature converter app for the Flutter assignment. It lets you convert temperatures between Fahrenheit and Celsius.
 
-## Features
+## What it does
 
-- Convert between Fahrenheit and Celsius
-- Real-time conversion updates
-- Conversion history tracking
-- Clean and intuitive user interface
-- Responsive design (supports both portrait and landscape)
-- Material Design implementation
+- Converts F to C and C to F
+- Shows your conversion history
+- Works in portrait and landscape mode
+- Looks nice with Material Design
 
-## Technical Specifications
+## How to use it
 
-- Built with Flutter
-- State management using setState
-- Implements various Flutter widgets
-- Follows Material Design guidelines
-- Maintains conversion history
-- Formats results to 2 decimal places
+1. Pick whether you want F to C or C to F
+2. Type in the temperature
+3. Hit Convert
+4. See your result and it's saved in history
 
-## Project Structure
+## Cool features I added
 
-```
-lib/
-├── main.dart              # App entry point
-├── screens/
-│   └── home_screen.dart   # Main conversion screen
-├── widgets/
-│   ├── conversion_form.dart    # Temperature input and conversion
-│   └── history_list.dart       # Conversion history display
-└── models/
-    └── conversion_history.dart # History data model
-```
+- Shows results with 2 decimal places (like 32.00°F)
+- Keeps track of what you converted
+- Works both ways (F to C and C to F)
+- Nice clean look
+- Works in portrait and landscape
 
-## Installation
+## The formulas I used
 
-1. Clone this repository
-2. Ensure Flutter is installed on your system
-3. Run `flutter pub get` to install dependencies
-4. Connect a device or start an emulator
-5. Run `flutter run` to start the app
+- For F to C: (°F - 32) × 5/9
+- For C to F: °C × 9/5 + 32
 
-## Usage
+## How to run it
 
-1. Select the desired conversion type (Fahrenheit to Celsius or vice versa)
-2. Enter the temperature value
-3. Press the Convert button
-4. View the converted result
-5. Check the history section for previous conversions
+1. Make sure you have Flutter
+2. Get the code from GitHub
+3. Run `flutter pub get`
+4. Use `flutter run` to start
 
-## Implementation Details
+## Files and stuff
 
-- Conversion Formulas:
-  - °F = °C × (9/5) + 32
-  - °C = (°F - 32) × (5/9)
-- Results are formatted to 2 decimal places
-- Maintains conversion history during app session
-- Implements responsive design for both orientations
+I organized the code into different folders:
+- `lib/main.dart` - where everything starts
+- `lib/screens` - the main screen
+- `lib/widgets` - the different parts of the app
+- `lib/models` - for keeping track of conversions
 
-## Code Style
-
-This project follows Flutter's official style guide and best practices:
-- Clear and meaningful variable/function names
-- Comprehensive documentation and comments
-- Modular and clean code structure
-- Proper state management implementation
+Tried to keep the code clean and easy to understand with comments explaining the tricky parts!
